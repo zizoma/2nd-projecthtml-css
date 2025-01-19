@@ -21,17 +21,21 @@ a{
 li{
     list-style: none;
 }
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-    .container {
-        width: 100%;
-        padding: 10px;
+@media (max-width: 768px) {
+    /* تعديلات للشاشات الصغيرة */
+    body {
+      font-size: 14px;
     }
-}
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
 /* small */
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     .container {
-        width: 750px;
+        width: 96%;  
+        overflow: hidden; 
     }    
 }
 /* medium */
@@ -268,6 +272,11 @@ display: none;
     height: calc(100vh - 75px);
     background-image: url(../images/portrait_handsome_smiling_stylish_young_man_model_dressed_jeans.jpg);
     background-size: cover;
+}
+@media (max-width:768px) {
+    .main{
+        background-position: center;
+    }
 }
 .main .info{
     position: absolute;
@@ -844,6 +853,7 @@ footer .top-fo{
     color: #777;
     font-size: 18px;
     transition: .3s;
+    margin:5px;
 }
 .fo-icons a i:hover{
     transform: scale(1.04);
